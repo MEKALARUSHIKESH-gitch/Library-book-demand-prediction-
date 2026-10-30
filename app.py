@@ -569,6 +569,7 @@ elif menu == "👨‍💼 Librarian / Admin Module":
                 for _, request in pending_requests.iterrows():
                     request_id = int(request["transaction_id"])
                     with st.container(border=True):
+            
                         st.write(
                             f"**{request['book_name']}** ({request['book_id']}) — "
                             f"{request['student_name']} ({request['student_id']}) · "
